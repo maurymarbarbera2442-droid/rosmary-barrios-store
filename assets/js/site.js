@@ -7,15 +7,15 @@
    ========================================================== */
 window.RB_BUSINESS = {
   marca: 'Rosmary Barrios Store',
-  razonSocial: null,          // ej.: 'Inversiones Rosmary Barrios, C.A.'
-  rif: null,                  // ej.: 'J-12345678-9'
-  direccion: null,            // dirección fiscal completa
-  ciudad: null,               // ej.: 'Punto Fijo, estado Falcón'
-  correo: null,               // ej.: 'tienda@rosmarybarrios.com'
+  razonSocial: 'Rosmary Barrios Store', // cámbialo por la razón social si la tienes
+  rif: 'J-50078623-9',
+  direccion: 'Las Virtudes, Punto Fijo, estado Falcón, Venezuela',
+  ciudad: 'Punto Fijo, estado Falcón',
+  correo: 'rosmarybarrios07@gmail.com',
   whatsapp: '0424-668-8030',
   whatsappIntl: '584246688030',
-  horario: null,              // ej.: 'Lunes a sábado, 9:00 a. m. a 6:00 p. m.'
-  instagram: null,            // ej.: 'rosmarybarrios.store' (sin @)
+  horario: 'De 10:00 a. m. a 8:00 p. m.',
+  instagram: 'rosmarybarriosstore', // sin @
   diasReclamo: 7,             // días para reportar un defecto de fábrica
   diasAcademiaReembolso: null,// días antes del curso para pedir reembolso
   registroSanitario: null,    // registro o notificación sanitaria de henna y pega

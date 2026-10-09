@@ -198,3 +198,22 @@
 .mbox .mimg { position: relative; min-height: 420px }
 .mbox .mimg img { position: absolute; inset: 0; width: 100%; height: 100%; max-height: none }
 @media (max-width: 960px) { .mbox .mimg { min-height: 0; height: 42svh } }
+
+/* pantalla de carga con el logo RB */
+.loader { display: none }
+.is-loading .loader, .loader.leaving { display: grid; position: fixed; inset: 0; z-index: 300; place-items: center; background: var(--studio); color: var(--accent);
+  clip-path: inset(0 0 0 0); transition: clip-path 1s cubic-bezier(.77, 0, .18, 1) }
+.loader.leaving { clip-path: inset(0 0 100% 0) }
+.l-inner { display: flex; flex-direction: column; align-items: center; gap: 22px }
+.l-mono { width: clamp(110px, 18vw, 170px); height: clamp(78px, 13vw, 120px); opacity: 0; transform: scale(.82); filter: blur(10px);
+  animation: lmono 1s cubic-bezier(.22, 1, .36, 1) .1s forwards }
+.l-line { width: 0; height: 1px; background: var(--accent); animation: lline .8s cubic-bezier(.22, 1, .36, 1) .55s forwards }
+.l-text { font: 600 11px var(--text); letter-spacing: .2em; color: var(--studio-ink); opacity: 0; animation: ltext .9s ease .75s forwards; white-space: nowrap }
+.l-text b { color: var(--accent); font-weight: 700 }
+@keyframes lmono { to { opacity: 1; transform: none; filter: none } }
+@keyframes lline { to { width: 160px } }
+@keyframes ltext { from { opacity: 0; letter-spacing: .2em } to { opacity: 1; letter-spacing: .42em } }
+/* la portada espera a que termine la carga para animarse */
+.is-loading .hero .reveal { opacity: 0; transform: translateY(34px) }
+.is-loading .hero .mask-line > span { transform: translateY(110%) }
+.is-loading body { overflow: hidden }

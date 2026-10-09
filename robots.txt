@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rosmarybarriosstore.vercel.app/sitemap.xml

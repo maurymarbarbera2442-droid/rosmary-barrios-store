@@ -253,3 +253,19 @@
 
   render();
 })();
+
+/* pantalla de carga: se muestra mínimo 1,6 s y máximo 4 s, luego la página entra */
+(function () {
+  const root = document.documentElement, loader = document.querySelector('.loader');
+  if (!loader || !root.classList.contains('is-loading')) return;
+  const t0 = performance.now();
+  let done = false;
+  function finish() {
+    if (done) return; done = true;
+    loader.classList.add('leaving');
+    requestAnimationFrame(() => { root.classList.remove('is-loading'); setTimeout(() => loader.remove(), 1100); });
+  }
+  const go = () => setTimeout(finish, Math.max(0, 1600 - (performance.now() - t0)));
+  if (document.readyState === 'complete') go(); else addEventListener('load', go);
+  setTimeout(finish, 4000);
+})();

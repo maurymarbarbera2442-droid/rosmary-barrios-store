@@ -39,7 +39,7 @@
       specs: ['Acero inoxidable, hecho a mano', '4.33" × 0.39"', 'Incluye estuche RB'] },
     { id: 'pega', name: 'Pega de pestañas', cat: 'pestanas', tag: 'Pestañas · Insumo', img: 'pega', bg: 'light', fit: 'cover', price: null, warn: 'pega',
       lead: 'Adhesivo negro de secado rápido para extensiones de pestañas, con retención de 5 a 6 semanas.',
-      specs: ['Secado: 3–4 segundos', 'Retención: 5–6 semanas (según fabricante; varía según técnica y cuidado)', 'Color negro · 5 ml', 'Libre de látex y formaldehído (según fabricante)', 'Aprobado por ITQA (según fabricante)', 'Aplicar a 22–25 °C con humedad de 50–70 %'] },
+      specs: ['Secado: 3–4 segundos', 'Retención: 5–6 semanas (varía según técnica y cuidado)', 'Color negro · 5 ml', 'Libre de látex y formaldehído', 'Aprobado por ITQA', 'Aplicar a 22–25 °C con humedad de 50–70 %'] },
     { id: 'hilo', name: 'Hilo tinturado', cat: 'cejas', tag: 'Cejas · Insumo', img: 'hilo', bg: 'light', fit: 'cover', price: null, warn: null,
       lead: 'Hilo para diseño y mapeo de cejas, en presentación cilíndrica tipo lápiz.',
       specs: ['Color blanco · acabado natural', 'Forma cilíndrica (lápiz)', 'Contenido: 30 metros'] },
